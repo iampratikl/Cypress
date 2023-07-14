@@ -1,0 +1,64 @@
+{
+  
+  "name": "cypressautomation",
+  
+  "version": "1.0.0",
+  
+  "description": "",
+  
+  "main": "index.js",
+  
+  "scripts": {
+  
+    
+  "test": "echo \"Error: no test specified\" && exit 1"
+  
+  },
+  
+  "author": "PratikL",
+  
+  "license": "ISC",
+  
+  "Dependencies": {
+  
+    
+  "@badeball/cypress-cucumber-preprocessor": "^18.0.1",
+  
+    
+  "cypress/browserify-preprocessor": "^3.0.2",
+  
+    
+  "cypress": "^12.12.0",
+  
+    
+  "cypress-mysql": "^1.0.0"
+  
+  },
+  
+  "cypress-cucumber-preprocessor": {
+  
+    
+  "nonGlobalStepDefinitions": true,
+  
+    
+  "stepDefinitions": [
+  
+    
+    
+  "cypress/e2e/4-automation/**/*.cy.js"
+  
+    
+  ]
+  
+  },
+  
+  "dependencies": {
+  
+    
+  "mysql": "^2.18.1",
+  
+    
+  "pg": "^8.11.1"
+  
+  }
+}
